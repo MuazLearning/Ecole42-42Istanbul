@@ -1,0 +1,5 @@
+Credentials cache: API:B18483DD-5BAF-4EE6-8F90-35F90EF1DB84
+        Principal: mmemis@42ISTANBUL.COM.TR
+
+  Issued                Expires             Flags    Principal
+Nov 22 20:22:26 2021  Nov 23 06:22:18 2021  FPIA   krbtgt/42ISTANBUL.COM.TR@42ISTANBUL.COM.TR
