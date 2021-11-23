@@ -1,5 +1,6 @@
 Pwd
 Ls -p
+ls -a  => gizli dosyalarıda listeler
 Rm fileName
 Rmdir folderName
 man touch
