@@ -1,0 +1,89 @@
+Pwd
+Ls -p
+Rm fileName
+Rmdir folderName
+man touch
+git push git@vogsphere.42istanbul.com.tr:vogsphere/intra-uuid-939d114a-dde0-4be8-9daa-47fe256d3856-3891464 master
+Qa yaparak vim den değişiklik yapmadan çıkabilirsin
+*** Gizli Dosyları Göster *****
+defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder --------------------------------------------
+Ex00
+
+Mkdir 42
+Ls
+Cd 42
+Touch z
+vi z ' "Z" yaz. Esc :wq yaz kaydet çık. :qa değişiklik yapmadan çıkar.
+Cat z
+--------------------------------------------
+Ex01
+
+touch testShell00
+R: 4 , w: 2, x: 1
+chmod 455 testShell00
+Ls -l
+
+-r--r-xr-x  1 mmemis  2021_istanbul  0 Nov 22 18:29 testShell00
+tar -cf testShell00.tar testShell00
+--------------------------------------------
+ex02
+
+touch -t 06012146 test1
+cat > test3 "1" yaz ctrl+d ye 2 kere bas çık
+ln test3 test5
+ln -s test0 test6
+touch -h -t 06012220 test6
+İzinler için chmod ~~ kullan
+Ls -l ile kontrol et
+--------------------------------------------
+Ex03
+
+/usr/bin/kinit
+kinit
+Klist -f
+Klist.txt dosyasını oluştur içine kopyala
+cat klist.txt ile kontrol et
+--------------------------------------------
+Ex04
+
+Dosya ve klasörleri oluştur. "Mdls" dosyası oluştur. İçine "ls -tUpm" yaz.
+Bash mdls
+Sonuç:  mdls, file2, file1, folder2/, folder1/ 
+--------------------------------------------
+Ex05
+
+42 klasörün içindeyken 
+Git init
+Git add.
+Git commit -m "message"
+vim git_commit.sh içine yaz "git log --pretty=%H | head -n 5"
+git log -5 --pretty=%h
+bash git_commit.sh | cat -e
+--------------------------------------------
+Ex06
+
+vi .gitignore içine ".DS_Store mywork.c" yaz
+vi git_ignore.sh  "git status --ignored -s | grep '!!' | cut -f 2 -d' '" yaz
+touch .DS_Store
+touch mywork.c
+bash git_ignore.sh.  ~~~~~ bashgit_ignore.sh|cat -e a
+--------------------------------------------
+Ex07
+
+Resources dan a ve sw.diff dosyalarını kopyala. Sonra aşağıdaki kodu yaz.
+patch a sw.diff -o b
+--------------------------------------------
+Ex08
+
+Mkdir ex08
+vi clean içine "find . -type f \( -name '#*#' -o -name '*~' \) -print -delete"
+Touch #sadas#
+Bash clean => ./#asdhkjn# dosyayı siler.
+--------------------------------------------
+Ex09
+
+Vim dosya adı bir. İçine rakamlarla 42 ye kadar yaz. Sonra 42 yaz.
+file -m ft_magic 42
+
+
+
