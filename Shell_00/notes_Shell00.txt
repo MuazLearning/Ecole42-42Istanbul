@@ -34,8 +34,10 @@ cat > test3 "1" yaz ctrl+d ye 2 kere bas çık
 ln test3 test5
 ln -s test0 test6
 touch -h -t 06012220 test6
+Chmod -h 777 test6
 İzinler için chmod ~~ kullan
 Ls -l ile kontrol et
+tar -cf exo2.tar *
 --------------------------------------------
 Ex03
 
@@ -48,8 +50,17 @@ cat klist.txt ile kontrol et
 Ex04
 
 Dosya ve klasörleri oluştur. "Mdls" dosyası oluştur. İçine "ls -tUpm" yaz.
-Bash mdls
-Sonuç:  mdls, file2, file1, folder2/, folder1/ 
+-t      Sort by time modified (most recently modified first) before sort-
+        ing the operands by lexicographical order. "Sözlük sırasına göre sıralar."
+-U      Use time of file creation, instead of last modification for sort-
+        ing (-t) or long output (-l). "Dosya oluşturma zamanına göre sıralar."
+-p      Write a slash (`/') after each filename if that file is a direc-
+        tory. "Klasörleri "/" ile gösterir.
+-m      Stream output format; list files across the page, separated by
+        commas. "Dosya ve klasörleri virgülle ayırır. "
+Bash midls
+Sonuç:  midls, file2, file1, folder2/, folder1/ 
+
 --------------------------------------------
 Ex05
 
