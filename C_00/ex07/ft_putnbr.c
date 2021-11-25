@@ -1,45 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmemis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/25 17:41:04 by mmemis            #+#    #+#             */
-/*   Updated: 2021/11/25 19:09:22 by mmemis           ###   ########.fr       */
+/*   Created: 2021/11/25 21:58:04 by mmemis            #+#    #+#             */
+/*   Updated: 2021/11/25 21:58:13 by mmemis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_3num(char a, char b, char c)
+void	ft_putchar(char c)
 {
-	write (1, &a, 1);
-	write (1, &b, 1);
-	write (1, &c, 1);
-	write (1, ", ", 2);
+	write(1, &c, 1);
 }
 
-void	ft_print_comb(void)
+void	ft_putnbr(int nb)
 {
-	char	d;
-	char	e;
-	char	f;
-
-	d = '0';
-	while (d <= '7')
+	if (nb == -2147483648)
 	{
-		e = d + 1;
-		while (e <= '8')
+		ft_putnbr(nb / 10);
+		ft_putchar('8');
+	}
+	else if (nb < 0)
+	{
+		ft_putchar('-');
+		ft_putnbr(-nb);
+	}
+	else
+	{
+		if (nb > 9)
 		{
-			f = e + 1;
-			while (f <= '9')
-			{
-				ft_3num(d, e, f);
-				f++;
-			}
-			e++;
+			ft_putnbr(nb / 10);
 		}
-		d++;
+		ft_putchar(48 + nb % 10);
 	}
 }
