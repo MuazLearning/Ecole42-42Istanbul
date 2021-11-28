@@ -1,0 +1,9 @@
+./a.out | wc -c
+Gcc -o main main.c a.out yerine main olarak çıktıyı verir.
+Gcc -Wall -Werror -Wextra main.c
+
+vi ~/.vimrc
+
+Syntax on
+Set number
+Set mouse=a
