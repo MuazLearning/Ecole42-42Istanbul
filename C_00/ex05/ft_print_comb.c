@@ -6,7 +6,7 @@
 /*   By: mmemis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 17:41:04 by mmemis            #+#    #+#             */
-/*   Updated: 2021/11/25 19:09:22 by mmemis           ###   ########.fr       */
+/*   Updated: 2021/11/28 21:45:18 by mmemis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@ void	ft_3num(char a, char b, char c)
 	write (1, &a, 1);
 	write (1, &b, 1);
 	write (1, &c, 1);
-	write (1, ", ", 2);
+	if (a != '7')
+	{
+		write (1, ", ", 2);
+	}
 }
 
 void	ft_print_comb(void)
