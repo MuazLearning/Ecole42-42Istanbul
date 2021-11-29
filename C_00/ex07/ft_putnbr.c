@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmemis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/25 21:58:04 by mmemis            #+#    #+#             */
-/*   Updated: 2021/11/25 21:58:13 by mmemis           ###   ########.fr       */
+/*   Created: 2021/11/29 22:06:49 by mmemis            #+#    #+#             */
+/*   Updated: 2021/11/29 22:13:04 by mmemis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,24 +17,24 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_putnbr(int nb)
+void	ft_putnbr(int n)
 {
-	if (nb == -2147483648)
+	if (n > 0)
 	{
-		ft_putnbr(nb / 10);
-		ft_putchar('8');
+		if (n > 9)
+		{
+			ft_putnbr(n / 10);
+		}
+		ft_putchar(n % 10 + '0');
 	}
-	else if (nb < 0)
+	else if (n == -2147483648)
 	{
-		ft_putchar('-');
-		ft_putnbr(-nb);
+		ft_putnbr(n / 10);
+		ft_putchar('8');
 	}
 	else
 	{
-		if (nb > 9)
-		{
-			ft_putnbr(nb / 10);
-		}
-		ft_putchar(48 + nb % 10);
+		ft_putchar('-');
+		ft_putnbr(-n);
 	}
 }

@@ -7,3 +7,5 @@ vi ~/.vimrc
 Syntax on
 Set number
 Set mouse=a
+
+caffeinate
