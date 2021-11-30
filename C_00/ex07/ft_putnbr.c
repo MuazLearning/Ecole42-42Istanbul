@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int n)
 {
-	if (n > 0)
+	if (n >= 0)
 	{
 		if (n > 9)
 		{
