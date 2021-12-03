@@ -6,7 +6,7 @@
 /*   By: mmemis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 22:00:59 by mmemis            #+#    #+#             */
-/*   Updated: 2021/11/25 22:01:10 by mmemis           ###   ########.fr       */
+/*   Updated: 2021/12/03 21:07:00 by mmemis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@ void	ft_print_combn(int n);
 
 int	main(void)
 {
-	int	n;
-
-	n = 2;
-	ft_print_combn(n);
+	ft_print_combn(6);
+	return (0);
 }

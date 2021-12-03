@@ -16,6 +16,6 @@ int	main(void)
 {
 	int	nb;
 
-	nb = -23323213;
+	nb = 42;
 	ft_putnbr(nb);
 }

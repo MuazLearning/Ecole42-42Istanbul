@@ -1,36 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_print_combn.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmemis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/29 22:06:49 by mmemis            #+#    #+#             */
-/*   Updated: 2021/12/03 20:46:39 by mmemis           ###   ########.fr       */
+/*   Created: 2021/12/03 20:59:34 by mmemis            #+#    #+#             */
+/*   Updated: 2021/12/03 21:02:47 by mmemis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	print_int(int n)
+void	print_combn(char *num, int num_size, int index, char digit)
 {
-	n += 48;
-	write(1, &n, 1);
+	if (index == num_size)
+	{
+		write(1, num, num_size);
+		if (num[0] - '0' < 10 - num_size)
+			write(1, ", ", 2);
+	}
+	else
+	{
+		while (digit - '0' <= (10 - num_size) + index)
+		{
+			num[index] = digit;
+			print_combn(num, num_size, index + 1, digit + 1);
+			digit++;
+		}
+	}
 }
 
-void	ft_putnbr(int n)
+void	ft_print_combn(int n)
 {
-	if (n == -2147483648)
-	{
-		write(1, "-2147483648", 11);
-		return ;
-	}
-	if (n < 0)
-	{
-		write(1, "-", 1);
-		n *= -1;
-	}
-	if (n > 9)
-		ft_putnbr(n / 10);
-	print_int(n % 10);
+	char	num[9];
+
+	if (n > 0 && n < 10)
+		print_combn(num, n, 0, '0');
 }
