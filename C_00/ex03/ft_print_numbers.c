@@ -6,7 +6,7 @@
 /*   By: mmemis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 17:03:57 by mmemis            #+#    #+#             */
-/*   Updated: 2021/11/25 17:15:24 by mmemis           ###   ########.fr       */
+/*   Updated: 2021/12/10 21:24:25 by mmemis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 void	ft_print_numbers(void)
 {
-	char	number;
-
-	number = '0';
-	while (number <= '9')
-	{
-		write (1, &number, 1);
-		number++;
-	}
+	write(1, "0123456789", 10);
 }
