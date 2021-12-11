@@ -126,3 +126,9 @@ void	*ft_print_memory(void *addr, unsigned int size)
 	w_line(addr2, d);
 	return (addr);
 }
+//#include <stdio.h>
+//int main(void)
+//{
+//    char a[225] = "asş\0ldkflhsalkdjf aodfşkl\nasdjl şla01243sdfkasd";
+//    ft_print_memory(a,100);
+//}

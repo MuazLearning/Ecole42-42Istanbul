@@ -14,14 +14,40 @@
 
 int	ft_str_is_alpha(char *str)
 {
-	int	s;
+	int	i;
 
-	s = 0;
-	while (str[s] != '\0')
+	i = 0;
+	while (str[i])
 	{
-		if ((str[s] < 'A') || (str[s] > 'Z' && str[s] < 'a') || (str[s] > 'z'))
+		if ((str[i] < 65) || (str[i] > 90 && str[i] < 97) || (str[i] > 122))
 			return (0);
-		s++;
+		i++;
 	}
 	return (1);
 }
+//#include <stdio.h>
+//int        main(void)
+//{
+//    char loweralpha[] = "abcdefghi";
+//    char *p_loweralpha;
+//    p_loweralpha = loweralpha;
+//
+//    char upperalpha[] = "ASDCV";
+//    char *p_upperalpha;
+//    p_upperalpha = upperalpha;
+//    
+//    char notalpha[] = "ASDCV_";
+//    char *p_notalpha;
+//    p_notalpha = notalpha;
+//
+//    char empty[] = "";
+//    char *p_emp;
+//    p_emp = empty;
+//
+//    printf("%s = %d\n", loweralpha, ft_str_is_alpha(p_loweralpha));
+//    printf("%s = %d\n", upperalpha, ft_str_is_alpha(p_upperalpha));
+//    printf("%s = %d\n", notalpha, ft_str_is_alpha(p_notalpha));
+//    printf("Empty = %d\n", ft_str_is_alpha(p_emp));
+//
+//    return (0);
+//}

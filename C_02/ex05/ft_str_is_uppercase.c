@@ -12,14 +12,35 @@
 
 int	ft_str_is_uppercase(char *str)
 {
-	int	sayac;
+	int	i;
 
-	sayac = 0;
-	while (str[sayac] != '\0')
+	i = 0;
+	while (str[i])
 	{
-		if (!(str[sayac] >= 65 && str[sayac] <= 90))
+		if (str[i] < 65 || str[i] > 90)
 			return (0);
-		sayac++;
+		i++;
 	}
 	return (1);
 }
+//#include <stdio.h>
+//int        main(void)
+//{
+//    char uppercase[] = "SDFAFDEWI";
+//    char *p_upr;
+//    p_upr = uppercase;
+//
+//    char special[] = "abcdASDASKLDNLJKAShijklmnopqrstuvwxyz_";
+//    char *p_spe;
+//    p_spe = special;
+//
+//    char empty[] = "";
+//    char *p_emp;
+//    p_emp = empty;
+//
+//    printf("%s = %d\n", uppercase, ft_str_is_uppercase(p_upr));
+//    printf("%s = %d\n", special, ft_str_is_uppercase(p_spe));
+//    printf("Empty = %d\n", ft_str_is_uppercase(p_emp));
+//
+//    return (0);
+//}

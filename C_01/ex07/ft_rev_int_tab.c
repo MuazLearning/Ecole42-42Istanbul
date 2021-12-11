@@ -25,3 +25,15 @@ void	ft_rev_int_tab(int *tab, int size)
 		i++;
 	}
 }
+//#include <stdio.h>
+//int    main(void) {
+//  int arrays[] = {5, 6, 0, 3, 853};
+//  int *tab = arrays;
+//
+//  ft_rev_int_tab(tab, 5);
+//  for(int i = 0; i < 5; i++)
+//  {
+//    printf("%d\n", tab[i]);
+//  }
+//  return 0;
+//}

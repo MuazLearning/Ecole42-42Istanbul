@@ -21,3 +21,11 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
+//#include <stdio.h>
+//int    main(void)
+//{
+//    int    len;
+//
+//    len = ft_strlen("1234");
+//    printf("%d", len);
+//}

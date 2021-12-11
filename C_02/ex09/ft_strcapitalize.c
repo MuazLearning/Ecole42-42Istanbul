@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	iss_alpha(char c)
+int	is_alpha(char c)
 {
 	if ((c >= 'a') && (c <= 'z'))
 		return (1);
@@ -26,19 +26,34 @@ char	*ft_strcapitalize(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
-		while (str[i] != '\0' && !iss_alpha(str[i]))
+		while (str[i] && !is_alpha(str[i]))
 			i++;
-		if (str[i] != '\0' && ((str[i] >= 'a') && (str[i] <= 'z')))
-			str[i] = ((str[i] - 'a') + 'A');
+		if (str[i] && ((str[i] >= 'a') && (str[i] <= 'z')))
+			str[i] -= 32;
 		i++;
-		while (str[i] != '\0' && iss_alpha(str[i]))
+		while (str[i] && is_alpha(str[i]))
 		{
 			if ((str[i] >= 'A') && (str[i] <= 'Z'))
-				str[i] = ((str[i] - 'A') + 'a');
+				str[i] += 32;
 			i++;
 		}
 	}
 	return (str);
 }
+//#include <stdio.h>
+//int        main(void)
+//{
+//    char str1[] = "salt, commt tu vas ? 42mot quat-dux; cinqnte+et+un";
+//
+//    char str2[] = " sALT, ComMT tu VAS ? 42Mot QUat-dUX; cinQntE+ET+un";
+//
+//    char empty[] = "";
+//
+//    printf("-----\nBEF = %s", str1);
+//    printf("\nAFT = %s\n", ft_strcapitalize(str1));
+//    printf("\nBEF = %s", str2);
+//    printf("\nAFt = %s\n", ft_strcapitalize(str2));
+//    printf("\nEmpty = %s\n-----\n", ft_strcapitalize(empty));
+//}

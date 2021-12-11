@@ -45,3 +45,10 @@ void	ft_putstr_non_printable(char *str)
 		index++;
 	}
 }
+//#include <stdio.h>
+//int main()
+//{
+//    char str[] = "Coucou\ntuvasbien?";
+//    
+//    ft_putstr_non_printable(str);
+//}
