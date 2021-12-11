@@ -50,6 +50,27 @@ caffeinate
 command+shift+4 => ekran alıntısı mac için.
 ```
 ```c
+#define Max(n1, n2) (n1>n2) ? s1 : s2
+#define Max(n1, n2) (n1>n2) // true or false
+#define Max 50
+#define flt 2.45
+printf("%t", tab);
+printf("%n", new_line);
+printf("%c", char);
+printf("%s", str);
 printf("%18.3s", str); // 18 karakter boş bırakır. 3 karakter strden yazar.
 printf("%-20s", str);
+printf("%.2f", float); // virgülden sonra 2 hane.
+printf("%d", int);
+int i = 5;
+int *p = &i;
+scanf("%c", &char);
+scanf("%s", &str);
+scanf("%d", &i);
+printf("%p", pointer_address);
+printf("%u", pointer_address);
+printf("%x", pointer_address);
+printf("%d", *pointer_value);
+printf("%x", &number); // Bellek adresini verir.  
+system("COLOR 2"); // çıktının rengini yeşil verir. 'A' light green.
 ```
