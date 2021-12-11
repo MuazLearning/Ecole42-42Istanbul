@@ -49,3 +49,6 @@ https://www.syslogs.org/vi-basvuru-klavuzu-cheat-sheet/
 caffeinate
 command+shift+4 => ekran alıntısı mac için.
 ```
+```c
+printf("%18.3s", str); // 18 karakter boş bırakır. 3 karakter strden yazar.
+```
