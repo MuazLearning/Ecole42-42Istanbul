@@ -6,13 +6,13 @@
 /*   By: mmemis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 14:41:52 by mmemis            #+#    #+#             */
-/*   Updated: 2021/12/12 14:44:22 by mmemis           ###   ########.fr       */
+/*   Updated: 2021/12/12 16:11:36 by mmemis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_find_next_prime(int nb)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	if (nb < 3)
 		return (2);
