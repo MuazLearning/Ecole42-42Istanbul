@@ -48,6 +48,7 @@ https://www.syslogs.org/vi-basvuru-klavuzu-cheat-sheet/
 ```
 caffeinate
 command+shift+4 => ekran alıntısı mac için.
+control+command+mouse => Zoom in out 
 ```
 ```c
 #define Max(n1, n2) (n1>n2) ? s1 : s2
