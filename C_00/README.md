@@ -5,6 +5,7 @@ gcc *
 gcc -o main main.c 'a.out yerine main olarak çıktıyı verir.'
 main './a.out yerinebu komut ile çıktıyı görebiliriz.'
 Gcc -Wall -Werror -Wextra main.c
+gcc -Wextra -Wall -Werror ft_sort_params.c -o user_exe // psuhdan önce bununla derlendiğini kontrol et.
 ```
 ### Vim
 #### Ayarlar
