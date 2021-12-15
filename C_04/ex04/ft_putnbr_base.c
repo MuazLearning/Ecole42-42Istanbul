@@ -6,7 +6,7 @@
 /*   By: mmemis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 12:55:09 by mmemis            #+#    #+#             */
-/*   Updated: 2021/12/12 12:55:27 by mmemis           ###   ########.fr       */
+/*   Updated: 2021/12/16 01:14:15 by mmemis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_putnbr_base(int nbr, char *base)
 	while (base[++size])
 		if (base[size] == '+' || base[size] == '-' || base[size] == ' '
 			|| ft_in_base(base[size], base + size + 1)
-			|| base[size] >= 7 && base[size] <= 13)
+			|| (base[size] >= 7 && base[size] <= 13))
 			return ;
 	if (size < 2)
 		return ;
