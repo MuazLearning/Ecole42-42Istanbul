@@ -8,9 +8,12 @@ Gcc -Wall -Werror -Wextra main.c
 gcc -Wextra -Wall -Werror ft_sort_params.c -o user_exe // psuhdan önce bununla derlendiğini kontrol et.
 ```
 ### Vim
-(İncele)[https://www.beyaz.net/tr/ipucu/entry/121/vim-editoru-genel-notlar]
+[İncele](https://www.beyaz.net/tr/ipucu/entry/121/vim-editoru-genel-notlar)
+
+[Tema](https://opensource.com/article/19/12/colors-themes-vim)
 #### Ayarlar
-```sh
+```shell
+:colorscheme + space + tab
 cd ~/
 vi ~/.vimrc
 'İçine aşağıdakileri yazıp ":wq" ile çık.'
@@ -19,6 +22,15 @@ set number
 set mouse=a
 set ruler
 set cursorline 
+highlight cursorline cterm=none ctermfg=8 ctermbg=4
+set list
+set listchars=tab:>>.,trail:.
+set tabstop=4
+set softtabstop=4
+set autoindent
+set expandtab
+set bg=dark
+
 ```
 #### Kısayollar
 ```sh
