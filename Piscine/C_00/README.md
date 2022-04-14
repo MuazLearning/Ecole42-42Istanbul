@@ -8,6 +8,7 @@ Gcc -Wall -Werror -Wextra main.c
 gcc -Wextra -Wall -Werror ft_sort_params.c -o user_exe // psuhdan önce bununla derlendiğini kontrol et.
 ```
 ### Vim
+(İncele)[https://www.beyaz.net/tr/ipucu/entry/121/vim-editoru-genel-notlar]
 #### Ayarlar
 ```sh
 cd ~/
